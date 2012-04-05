@@ -1,3 +1,3 @@
 [submodule "libraries/lessphp"]
 	path = libraries/lessphp
-	url = https://github.com/leafo/lessphp.git
+	url = git@gecko.midnightoilconsulting.com:lessphp.git
