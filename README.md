@@ -6,15 +6,15 @@ This is a real-time less parser for your li3 setup.
 
 Put your less stylesheets into a folder 'less' in your webroot. For example:  
 
-	app/webroot/less/styles.css.less
+	/pub/less/styles.css.less
 
 In your layout view file, link to your stylesheet as usual:  
 
 	echo $this->Html->style('styles.css');
 
-From now on, magic will happen, as long as you keep your .css.less files in `webroot/less`.
+From now on, magic will happen, as long as you keep your .css.less files in `/pub/less`.
 li3_less will now convert your `styles.css.less` file into `styles.css` and serve it.
-The `.css` file will be cached and served in `webroot/less` until you modify the corresponding less file.
+The `.css` file will be cached and served in `/pub/less` until you modify the corresponding less file.
 
 ## Installation
 
@@ -28,7 +28,7 @@ and activate it in you app (config/bootstrap/libraries.php), of course:
 
 Also, you should chmod the less folder, so generated .css files can be cached.
 
-	chmod 0777 app/webroot/less
+	chmod 0777 /pub/less
 
 ## Requirements
 

@@ -20,7 +20,7 @@ Dispatcher::applyFilter('run', function($self, $params, $chain) {
 
 	// look for a matching less file
 	$basename = basename($params['request']->url);
-	$less_path =  LITHIUM_APP_PATH.'/webroot/less';
+	$less_path =  LITHIUM_APP_PATH . '/pub/less';
 	$less_file = str_replace('.css', '.less', "$less_path/$basename");
 
 	if(!file_exists($less_file)) {
